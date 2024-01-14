@@ -24,5 +24,5 @@ RUN npx prisma generate --schema ./schema.prisma
 # Expose the port that the app will run on
 EXPOSE 5000
 
-# Command to run the application with script script
+# Command to run the application with script
 CMD /script.sh && npx prisma migrate dev --name init && npm run build && npm run start
